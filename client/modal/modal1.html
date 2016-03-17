@@ -46,12 +46,50 @@
                             <p>Выберите размер (Size), а затем цвет (Color)</p>
                         </div>
                         <div class="col s12">
+                        {{#if color1}}
                             <div>Цвет:</div>
+                            {{/if}}
                             <ul class="ulColor">
-                                <li class="colorPhoto">
-                                    <img src="Htovar1.jpg" class="" width="28" height="28"  alt=""></li>
-                                <li class="colorPhoto">
-                                    <img src="tovar1.jpg" class="" width="28" height="28" alt=""></li>
+                                {{#if color1}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color1}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color2}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color2}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color3}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color3}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color4}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color4}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color5}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color5}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color6}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color6}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color7}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color7}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color8}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color8}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color9}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color9}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color10}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color10}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
                             </ul>
                         </div>
                         <div class="col s4">
@@ -90,7 +128,7 @@
                         </div>
                         <div class="col s4">
                             <label>Количество</label>
-                            <select class="browser-default selectSizeByst">
+                            <select class="browser-default quantity">
                               <option value="">1</option>
                               <option value="">2</option>
                               <option value="">3</option>
@@ -113,41 +151,7 @@
                               <option value="">20</option>
                             </select>
                         </div>
-
-                        <!--       <div class="col s6">
-
-                        <label>Цвет</label>
-                        <select class="browser-default selectColor">
-                            {{#if white}}
-                            <option value="{{white}}">{{white}}</option>
-                            {{/if}}
-                              {{#if black}}
-                            <option value="{{black}}">{{black}}</option>
-                            {{/if}}
-                              {{#if red}}
-                            <option value="{{red}}">{{red}}</option>
-                            {{/if}}
-                              {{#if blue}}
-                            <option value="{{blue}}">{{blue}}</option>
-                            {{/if}}
-                        </select>
-                    </div>
-                    -->
                     <div class="col s12">
-
-                        <!-- <div class="colorPhoto">
-                        <img src="tovar1.jpg" class="" width="28" height="28" alt=""></div>
-                    <div class="colorPhoto">
-                        <img src="tovar1.jpg" class="" width="28" height="28" alt=""></div>
-                    <div class="colorPhoto">
-                        <img src="tovar1.jpg" class="" width="28" height="28" alt=""></div>
-                    <div class="colorPhoto">
-                        <img src="tovar1.jpg" class="" width="28" height="28" alt=""></div>
-                    <div class="colorPhoto">
-                        <img src="tovar1.jpg" class="" width="28" height="28" alt=""></div>
-                    <div class="colorPhoto">
-                        <img src="tovar1.jpg" class="" width="28" height="28" alt=""></div>
-                    -->
                     <section class="ac-container">
 
                         <div>
