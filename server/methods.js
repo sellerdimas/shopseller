@@ -21,6 +21,7 @@ Meteor.methods({
             name: value.name,
             number: value.number,
             date: date.toLocaleString("en-US", options),
+            obrabotan: '-'
         });
     
   },

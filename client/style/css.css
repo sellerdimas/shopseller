@@ -265,6 +265,30 @@ animation-duration:2s;
   
 
 }
+.colorActive{
+  outline: 2px solid #FF6908;
+}
+.ulColor{
+  margin: 0;
+}
+/*   .colorPhoto { cursor: pointer; }
+:focus { outline: 2px solid red; } */
+.colorPhoto{
+  height: 32px;
+  width: 32px;
+border: 1px solid #CCCCCC;
+  display: inline-block;
+  margin: 0 7px 7px 0;
+  
+}
+.cvetPhotoMainBlock{
+  position: relative;
+}
+.colorPhoto img{
+  margin: 1px;
+  cursor: pointer;
+
+}
 .tovarBlock{
   cursor: pointer;
   position: relative;
@@ -486,13 +510,16 @@ animation-duration:2s;
   font-size: 24px;
   color: #999999;
 }
+..modalPrice p {
+  margin-left: 0;
+}
 .mAkcii{
   text-decoration: line-through;
   margin-left: 10px;
 }
 .modal p{
     font-size: 16px;
-    margin: 5px;
+    margin: 5px 5px 5px 0 ;
 }
 #mAkcii{
   font-size: 20px;

@@ -11,16 +11,18 @@ Template.modal1.helpers({
         }
     
   });
-Template.modal1.onRendered(function () {
-    $('select').material_select();
+/*Template.modal1.onRendered(function () {
+ $('.colorPhoto img').click(function (e) {
+    $(".colorPhoto img").removeClass("active"); //удаляем класс во всех вкладках
+        $(this).addClass('active');
 
-    $('.collapsible').collapsible();
-    $('.collapsible').collapsible({
-      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-    });
+     
+
+
+    })
 
   
-})
+})*/
 
 Template.modal1.events({
     'click .collapsible': function (e) {
@@ -28,15 +30,29 @@ Template.modal1.events({
     }
 });
 Template.modal1.events({
-    'click .modalPhoto img': function (e, tmpl) {
+    'click .colorPhoto img': function (e, tmpl) {
        var imgSrc = $(e.target).attr('src');
             $('#mainImg').attr('src', imgSrc);
     }
 });
 Template.modal1.events({
+    'focus .colorPhoto': function (e, tmpl) {
+        console.log('as');
+    }
+});
+
+
+Template.modal1.events({
     'click #tableSize': function (e, tmpl) {
        var imgSrc = $(e.target).attr('name');
             $('.tablSize').attr('src', imgSrc);
+    }
+});
+Template.modal1.events({
+    'click .colorPhoto img': function (e, tmpl) {
+           $(".colorPhoto img").removeClass("colorActive"); //удаляем класс во всех вкладках
+
+        $(e.target).addClass('colorActive');
     }
 });
 Template.modal1.events({
@@ -93,11 +109,18 @@ Template.modal1.events({
                 price: $('.mPirce').text(),
                 sizeByst: $('.selectSizeByst').val(),
                 sizeTrysu: $('.selectSizeTrysu').val(),
-                color: $('.selectColor').val(),
+                color: $('.colorPhoto .colorActive').attr('src'),
                 name: $('#name').val(),
                 number: $('#namber').val()
-            }         
-            if(modalVal.name && modalVal.number){
+            }
+            console.log(modalVal.header,
+            modalVal.firma,
+            modalVal.price,
+            modalVal.sizeByst,
+            modalVal.sizeTrysu,
+            modalVal.name,
+            modalVal.number);     
+            if(modalVal.name && modalVal.number && modalVal.color){
             Meteor.call('Orders',modalVal, function (err, res) {
                 if(err){
                     console.log('error methods');
@@ -110,7 +133,7 @@ Template.modal1.events({
                 }
             });       
         }else{
-            alert('Вы не ввели имя или телефон');
+            alert('Вы не выбрали цвет или не ввели имя и телефон');
         }
     }
 });
