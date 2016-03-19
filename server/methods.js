@@ -17,6 +17,7 @@ Meteor.methods({
             price: value.price,
             sizeByst: value.sizeByst,
             sizeTrysu: value.sizeTrysu,
+            quantity: value.quantity,
             color: value.color,
             name: value.name,
             number: value.number,

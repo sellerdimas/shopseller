@@ -25,19 +25,9 @@ Template.modal1.helpers({
 })*/
 
 Template.modal1.events({
-    'click .collapsible': function (e) {
-    
-    }
-});
-Template.modal1.events({
-    'click .colorPhoto img': function (e, tmpl) {
-       var imgSrc = $(e.target).attr('src');
+    'click .modalPhoto img': function (e, tmpl) {
+         var imgSrc = $(e.target).attr('src');
             $('#mainImg').attr('src', imgSrc);
-    }
-});
-Template.modal1.events({
-    'focus .colorPhoto': function (e, tmpl) {
-        console.log('as');
     }
 });
 
@@ -51,8 +41,9 @@ Template.modal1.events({
 Template.modal1.events({
     'click .colorPhoto img': function (e, tmpl) {
            $(".colorPhoto img").removeClass("colorActive"); //удаляем класс во всех вкладках
-
         $(e.target).addClass('colorActive');
+        var imgSrc = $(e.target).attr('src');
+            $('#mainImg').attr('src', imgSrc);
     }
 });
 Template.modal1.events({
@@ -109,6 +100,7 @@ Template.modal1.events({
                 price: $('.mPirce').text(),
                 sizeByst: $('.selectSizeByst').val(),
                 sizeTrysu: $('.selectSizeTrysu').val(),
+                quantity: $('.quantity').val(),
                 color: $('.colorPhoto .colorActive').attr('src'),
                 name: $('#name').val(),
                 number: $('#namber').val()

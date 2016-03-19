@@ -271,6 +271,11 @@ animation-duration:2s;
 .ulColor{
   margin: 0;
 }
+.mainImgModal img{
+  border: 1px solid #CCCCCC;
+}
+.mainImgModal img{
+}
 /*   .colorPhoto { cursor: pointer; }
 :focus { outline: 2px solid red; } */
 .colorPhoto{
@@ -578,11 +583,15 @@ border: 1px solid #CCCCCC;
   background: #E1223C;
 }
 .modalPhoto{
-  min-height: 75px;
+  height: 84px;
   margin-top: 10px;
   display:inline-block;
   cursor: pointer;
 
+
+}
+.modalPhoto img {
+    border:1px solid #CCCCCC;
 }
 .slide span{
   font-size: 20px;
