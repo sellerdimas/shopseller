@@ -5,7 +5,7 @@
                 <h3 class="center-align headerBlue">Модные купальники</h3>
                <h5 class="subHeaderBlack center-align">Наши купальники улучшат вашу внешность</h5> 
                 {{#each tovarNewCollections}}
-                <div class="col s4 m3 tovarBlock modal1" id="tovar" name="{{_id}}">
+                <div class="col s4 m3 tovarBlock modal1" id="tovar" name="{{_id}}" >
                     {{#if sale}}
                     <div class="sale">SALE</div>
                     {{/if}}
@@ -13,9 +13,11 @@
                     <div class="new">NEW</div>
                     {{/if}}
                     <div class="servicesBlockImg">
-                        <img src="{{imgSrc}}" class="responsive-img" alt=""></div>
+                        <img src="{{imgSrc}}" name="{{hover}}" names="{{imgSrc}}" class="responsive-img" alt=""></div>
 
                     <div class="">
+                         {{#if tovarSquereColor}}<div class="colorSquare" style="background:{{tovarSquereColor}};" name="{{hoverColor}}"></div>{{/if}}
+                         {{#if tovarSquereColor2}}<div class="colorSquare" style="background:{{tovarSquereColor2}};" name="{{hoverColor2}}"></div>{{/if}}
                         <div class="tovarHeader">{{tovarHeader}}</div>
                         <div class="firma">{{firma}}</div>
                         <div class="price">

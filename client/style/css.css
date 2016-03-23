@@ -294,8 +294,14 @@ border: 1px solid #CCCCCC;
   cursor: pointer;
 
 }
-.tovarBlock{
+.colorSquare{
+  height: 10px;
+  width: 10px;
+  margin-right: 5px;
+  display: inline-block;
   cursor: pointer;
+}
+.tovarBlock{
   position: relative;
 }
 .servicesBlockImg{
@@ -303,6 +309,7 @@ border: 1px solid #CCCCCC;
   margin-bottom: 10px;
   margin-top: 20px;
   position: relative;
+  cursor: pointer;
 }
 .tovarHeader{
     font-size: 15px;
@@ -374,12 +381,17 @@ border: 1px solid #CCCCCC;
   
 }
 
-
+.saleImg{
+  position: absolute;
+  left: -25px;
+  top: -20px;
+}
 
 .info1{
   margin-top: 85px;
   height: 430px;
   padding: 60px 0 10px 0;
+  position: relative;
 }
 .info1 h4{
   margin: 40px 0 30px 0;
