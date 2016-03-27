@@ -301,6 +301,10 @@ border: 1px solid #CCCCCC;
   display: inline-block;
   cursor: pointer;
 }
+.colorSquare img{
+  height: 1px;
+  width: 1px;
+}
 .tovarBlock{
   position: relative;
 }
