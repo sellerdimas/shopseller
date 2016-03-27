@@ -301,7 +301,7 @@ border: 1px solid #CCCCCC;
   display: inline-block;
   cursor: pointer;
 }
-.colorSquare img{
+.hoverSquere img{
   height: 1px;
   width: 1px;
 }
