@@ -6,6 +6,7 @@ Template.tovar.helpers({
   });
 
 Template.tovar.onRendered(function () {
+    $('.colorSquare img').hide();
   $( '.tovar img' ).hover(
         function() {
             var imgSrc = $(this).attr('names');
