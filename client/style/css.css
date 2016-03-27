@@ -301,8 +301,12 @@ border: 1px solid #CCCCCC;
   display: inline-block;
   cursor: pointer;
 }
-.hoverSquere img{
+.hoverImg img{
   height: 1px;
+  width: 1px;
+}
+.hoverImg{
+    height: 1px;
   width: 1px;
 }
 .tovarBlock{
